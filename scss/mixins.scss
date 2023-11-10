@@ -1,0 +1,61 @@
+@mixin content-block-padding {
+  padding: 20px 40px;
+}
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+@mixin flex-left {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+}
+
+@mixin flex-end {
+  display: flex;
+  justify-content: end;
+}
+
+@mixin sidebar {
+  padding: 20px 30px 30px 40px;
+}
+
+@mixin container {
+  width: 95vw;
+  margin: 0 auto;
+}
+
+@mixin sidebar-nav {
+  ul {
+    list-style: none;
+    margin-top: 0;
+    padding: 0;
+    padding-bottom: 30px;
+
+    li > a {
+      color: $wh;
+      padding-bottom: 8px;
+      display: inline-block;
+    }
+  }
+
+  ul:last-child {
+    padding: 0;
+  }
+}
+
+@mixin circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $wh;
+  color: $bl;
+}

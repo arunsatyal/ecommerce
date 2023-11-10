@@ -1,0 +1,73 @@
+@import "./colors.scss";
+@import "./variables.scss";
+@import "./mixins.scss";
+
+// BUTTONS
+
+$btn-pad: 10px 20px;
+
+.form-control {
+  border: none;
+  padding: 12px 18px;
+  font-size: 1rem;
+  border-radius: 5px;
+}
+
+.form-control-search {
+  width: 80%;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+
+.btn-header {
+  border: none;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  padding: 5px;
+  color: $wh;
+
+  img {
+    width: 25px;
+  }
+
+  span {
+    display: inline-block;
+    margin-top: 5px;
+  }
+}
+
+.btn {
+  padding: $btn-pad;
+  background: $bl;
+  color: $wh;
+  text-decoration: none;
+  border-radius: $rounded-default;
+  text-align: center;
+  border: none;
+  display: inline-block;
+}
+
+.badge {
+  padding: 4px 8px;
+  font-size: 0.8rem;
+  letter-spacing: 0pt;
+  border-radius: calc($rounded-default - 2px);
+  display: inline-block !important;
+  margin: 8px auto auto auto;
+  font-weight: bold;
+  background: black;
+  color: white;
+}
+
+.badge-outline {
+  border: solid 1px $bl;
+  color: $bl;
+  background: transparent;
+}
